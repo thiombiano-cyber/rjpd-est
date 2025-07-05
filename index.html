@@ -1,1 +1,113 @@
 <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RJPD-EST - Réseau des Jeunes pour la Paix et le Développement</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f4f4f4; color: #333; }
+        header { background: #006837; color: #fff; padding: 20px 0; text-align: center; }
+        nav { background: #e9e9e9; padding: 10px; text-align: center; }
+        nav a { margin: 0 15px; text-decoration: none; color: #006837; font-weight: bold; }
+        section { padding: 40px 20px; max-width: 1000px; margin: auto; background: white; margin-bottom: 20px; }
+        .section-title { color: #006837; margin-bottom: 20px; }
+        .domaines { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .domaine { background: #f0f9f1; border-left: 5px solid #006837; padding: 15px; }
+        footer { background: #006837; color: white; text-align: center; padding: 20px; }
+        .partenaires img { width: 100px; margin: 10px; }
+        .logo-rjpd { width: 80px; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; }
+        .form-group input, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        .form-group button { background: #006837; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+        .gallery { display: flex; flex-wrap: wrap; gap: 10px; }
+        .gallery img { width: calc(33% - 10px); height: auto; }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo-rjpd.png" alt="Logo RJPD" class="logo-rjpd">
+        <h1>Réseau des Jeunes pour la Paix et le Développement de la région de l'Est</h1>
+        <p>Une jeunesse engagée pour la paix, le développement socioéconomique et culturel</p>
+    </header>
+    <nav>
+        <a href="#apropos">À propos</a>
+        <a href="#domaines">Domaines</a>
+        <a href="#actions">Actions</a>
+        <a href="#actualites">Actualités</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#partenaires">Partenaires</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="apropos">
+        <h2 class="section-title">À propos de nous</h2>
+        <p>Le Réseau des Jeunes pour la Paix et le Développement de la région de l’Est (RJPD-EST) est une organisation associative, apolitique et à but non lucratif. Fondé par des jeunes engagés, il œuvre pour la promotion de la paix, du vivre-ensemble et du développement communautaire durable.</p>
+        <h3>Notre vision</h3>
+        <p>Une région de l’Est où les jeunes, les femmes et les communautés vivent en paix, accèdent à leurs droits fondamentaux et participent activement au développement inclusif et durable.</p>
+    </section>
+    <section id="domaines">
+        <h2 class="section-title">Domaines d'intervention</h2>
+        <div class="domaines">
+            <div class="domaine">🕊️ Consolidation de la paix et cohésion sociale</div>
+            <div class="domaine">📚 Éducation, santé et nutrition</div>
+            <div class="domaine">⚖️ Droits humains et gouvernance locale</div>
+            <div class="domaine">🌾 Sécurité alimentaire et moyens d’existence</div>
+            <div class="domaine">🛡️ Protection des civils</div>
+            <div class="domaine">🚀 Jeunesse et entrepreneuriat</div>
+        </div>
+    </section>
+    <section id="actions">
+        <h2 class="section-title">Nos actions</h2>
+        <p>Des actions concrètes menées sur le terrain pour renforcer la résilience communautaire, promouvoir la paix, et favoriser le développement local : projets communautaires, sensibilisations, plaidoyers, formations, accompagnement de jeunes entrepreneurs, etc.</p>
+    </section>
+    <section id="actualites">
+        <h2 class="section-title">Actualités</h2>
+        <ul>
+            <li>🔔 Lancement du projet de sensibilisation à la cohésion sociale à Fada</li>
+            <li>📢 Formation des jeunes leaders sur la gouvernance locale</li>
+            <li>🗓️ Campagne nutritionnelle dans les zones rurales - août 2025</li>
+        </ul>
+    </section>
+    <section id="galerie">
+        <h2 class="section-title">Galerie Photo</h2>
+        <div class="gallery">
+            <img src="images/photo1.jpg" alt="Activité 1">
+            <img src="images/photo2.jpg" alt="Activité 2">
+            <img src="images/photo3.jpg" alt="Activité 3">
+        </div>
+    </section>
+    <section id="partenaires">
+        <h2 class="section-title">Nos partenaires</h2>
+        <div class="partenaires">
+            <img src="images/logo-plan.png" alt="Plan International">
+            <img src="images/drapeau-chine.png" alt="Ambassade de Chine">
+        </div>
+    </section>
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Envoyer</button>
+            </div>
+        </form>
+        <p>Email : rjpd-est@example.org</p>
+        <p>Téléphone : +226 00 00 00 00</p>
+        <p>Adresse : Fada N’Gourma, Région de l’Est, Burkina Faso</p>
+    </section>
+    <footer>
+        &copy; 2025 RJPD-EST | Tous droits réservés
+    </footer>
+</body>
+</html>
